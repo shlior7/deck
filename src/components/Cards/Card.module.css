@@ -1,0 +1,16 @@
+.cards_spread {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 500px;
+  list-style: none;
+  padding: 0;
+}
+
+.cards_spread li {
+  margin-right: 10px;
+}
+
+.hand {
+  position: relative;
+}
