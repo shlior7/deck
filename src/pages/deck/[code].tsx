@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
-import { useChannel, usePresence, assertConfiguration, configureAbly } from "@ably-labs/react-hooks";
-import Hand from 'src/components/Cards/Hand';
-import Table from 'src/components/Table/Table';
+import { useChannel, usePresence } from "@ably-labs/react-hooks";
+import Hand from '../../components/Cards/Hand';
+import Table from '../../components/Table/Table';
 
 export default function Deck() {
   const [name, setName] = useState('')

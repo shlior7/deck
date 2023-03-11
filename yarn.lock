@@ -236,24 +236,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ably-nextjs-vercel-demo@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "ably-nextjs-vercel-demo@workspace:."
-  dependencies:
-    "@ably-labs/react-hooks": ^2.1.0
-    "@types/ably": ^1.0.0
-    "@types/react": ^18.0.28
-    "@types/react-dom": ^18.0.11
-    ably: ^1.2.37
-    next: ^13.2.1
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    react-hook-form: ^7.43.2
-    svg-cards: ^4.0.0
-    typescript: ^4.9.5
-  languageName: unknown
-  linkType: soft
-
 "ably@npm:*, ably@npm:^1.2.27, ably@npm:^1.2.37":
   version: 1.2.37
   resolution: "ably@npm:1.2.37"
@@ -340,6 +322,24 @@ __metadata:
   checksum: 1f7b4f5fdd955b7444b18ebdddf3f5c699159f13e9cf8ac9027ae4a60ae226aef9bbb14a6e12ca7dba3358b007cee6354b116e720262867c398de6c955ea451d
   languageName: node
   linkType: hard
+
+"deck@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "deck@workspace:."
+  dependencies:
+    "@ably-labs/react-hooks": ^2.1.0
+    "@types/ably": ^1.0.0
+    "@types/react": ^18.0.28
+    "@types/react-dom": ^18.0.11
+    ably: ^1.2.37
+    next: ^13.2.1
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    react-hook-form: ^7.43.2
+    svg-cards: ^4.0.0
+    typescript: ^4.9.5
+  languageName: unknown
+  linkType: soft
 
 "decompress-response@npm:^6.0.0":
   version: 6.0.0
