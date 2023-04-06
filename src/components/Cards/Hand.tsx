@@ -1,22 +1,32 @@
-import React, { useState } from 'react';
-import { CardClassCode } from 'src/types';
-import Card from './Card';
-import styles from './Card.module.css';
-type CardsProps = 
-{
-  cards: CardClassCode[];
-}
+import React, { FC, PropsWithChildren } from "react";
 
-const Hand:React.FC<CardsProps> = (props) => {
-  const cards = props.cards.map((code) => <Card code={code}/>)
-  
+interface HandProps extends PropsWithChildren { }
+
+const Hand: FC<HandProps> = ({ children }) => {
+  const cards = React.Children.toArray(children);
+
+  const cardWidth = 100;
+  const cardHeight = cardWidth * 1.5;
+
+  const handWidth = cardWidth * cards.length;
+
   return (
-    <div className={styles.cards}>
-      <ul className={styles.cards_spread}>
-        {cards}
-      </ul>
+    <div
+      style={{
+        position: "absolute",
+        bottom: 0,
+        left: "50%",
+        transform: `translateX(-${handWidth / 2}px)`,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        width: handWidth,
+        height: cardHeight,
+      }}
+    >
+
     </div>
   );
-}
+};
 
-export default Hand;
+export { Hand };
