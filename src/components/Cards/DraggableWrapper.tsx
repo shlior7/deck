@@ -91,7 +91,7 @@ const DraggableWrapper: React.FC<DraggableWrapperProps> = ({ children }) => {
       onMouseUp={handleMouseUp}
       onDragStart={handleDragStart}
       onMouseLeave={handleMouseLeave}
-      style={{ position: "absolute", left: position.x, top: position.y }}
+      style={{ position: "absolute", left: position.x, top: position.y, zIndex: 99999 }}
     >
       {children}
     </div>
