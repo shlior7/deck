@@ -39,6 +39,7 @@ const Slice: React.FC<SliceProps> = ({ index, numSlices, sliceAngle, centerX, ce
       onClick={handleClick}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+
     >
       <path
         d={pathCommands.join(' ')}
@@ -51,7 +52,7 @@ const Slice: React.FC<SliceProps> = ({ index, numSlices, sliceAngle, centerX, ce
         y={centerY + radius * Math.sin((startAngle + endAngle) / 2)}
         textAnchor="middle"
         dominantBaseline="central"
-        fill="white"
+        fill="red"
       >
         {index}
       </text>
